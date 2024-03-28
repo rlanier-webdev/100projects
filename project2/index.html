@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Project 1 - Social Media Site</title>
+</head>
+<body>
+
+    <!--Header-->
+    <section>
+        <header id="header" class="header">
+            <div class="logo">
+                <h3>N<i class="material-icons">not_interested</i>Tfb</h3>
+            </div>
+            
+            <nav class="main_menu">  
+                <ul class="menu">
+                    <li><a href="#">Name</a></li>
+                    <li><a href="#">Home</a></li>
+                </ul>
+            
+            <div class="icons">
+                <div class="icons_group1">            
+                    <i class="material-icons">people</i>
+                    <i class="material-icons">chat_bubble_outline</i>
+                    <i class="material-icons">notifications_none</i>
+                </div>
+    
+                <div class="icons_group2">
+                    <i class="material-icons">lock_open</i>
+                    <i class="material-icons">expand_more</i>
+                </div>
+            </div>
+    
+            <div class="search">
+                <i class="material-icons">search</i>
+                <input type="text" placeholder="Search">
+                <i class="material-icons">close</i>
+            </div>
+
+        </nav>
+        
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle">
+            
+        </header>
+    </section>
+
+    <!--Top Section-->
+    <section id="top">
+        
+        <div class="top__profile">
+            
+            <div class="top__image">
+
+                <img src="./img/profile-img.jpg">
+
+            </div>
+
+            <div class="top__info">
+
+                <h3>Jasmine Mone Carson</h3>
+
+                <button>Update Info</button>
+                <button>View Activity</button>
+
+            </div>
+
+        </div>
+        
+    </section>
+
+    <!--Content-->
+    <section id="content">
+        
+        <!--Left Side-->
+        <div id="left" class="content__container content__left">
+
+            <div id="intro" class="intro__container">
+                
+                <header class="content__header">
+                    <i class="material-icons">public</i>
+                    <h2>Intro</h2>
+                </header>
+
+                <div class="intro__content">
+                    <div>
+                        <h3>Developer, photographer</h3>
+                        <i class="material-icons edit">edit</i>
+                    </div>
+
+                    <p>Originally from Baltimore<br> Lives in Atlanta, GA</p>
+                    <p>From United States of America</p>
+
+                </div>
+
+                <a href="#">Update Info</a>
+            </div>
+
+            <!-- Photos Section -->
+            <div id="photos" class="gallery__container">
+
+                <header class="content__header">
+                    <div class="content__header--left">
+                        <i class="material-icons">camera</i>
+                        <h2>Photos</h2>
+                    </div>
+                    
+                    <div class="content__header--expand">
+                        <i class="material-icons">expand_more</i>
+                    </div> 
+                </header>
+
+                <div class="photo__grid">
+                    <div class="grid__box"><img src="./img/photo_gallery/photo_1.jpg" alt=""></div>
+                    <div class="grid__box"><img src="./img/photo_gallery/photo_2.jpg" alt=""></div>
+                    <div class="grid__box"><img src="./img/photo_gallery/photo_3.jpg" alt=""></div>
+                    <div class="grid__box"><img src="./img/photo_gallery/photo_4.jpg" alt=""></div>
+                    <div class="grid__box"><img src="./img/photo_gallery/photo_5.jpg" alt=""></div>
+                    <div class="grid__box"><img src="./img/photo_gallery/photo_6.jpg" alt=""></div>
+                    <div class="grid__box"><img src="./img/photo_gallery/photo_7.jpg" alt=""></div>
+                    <div class="grid__box"><img src="./img/photo_gallery/photo_8.jpg" alt=""></div>
+                    <div class="grid__box"><img src="./img/photo_gallery/photo_9.jpg" alt=""></div>
+                </div>
+            </div>
+
+            <!-- Friends Section -->
+            <div id="friends" class="gallery__container">
+
+                <div class="content__header">
+                    <div class="content__header--left">
+                        <i class="material-icons">people</i>
+                        <h2>Friends &#8226; 80,496</h2>
+                    </div>
+                    
+
+                    <div class="content__header--expand">
+                        <i class="material-icons">expand_more</i>
+                    </div>
+                </div>
+
+                <div class="photo__grid">
+                    <div class="grid__box"><img src="./img/friend_gallery/friend_1.jpg" alt=""></div>
+                    <div class="grid__box"><img src="./img/friend_gallery/friend_2.jpg" alt=""></div>
+                    <div class="grid__box"><img src="./img/friend_gallery/friend_3.jpg" alt=""></div>
+                    <div class="grid__box"><img src="./img/friend_gallery/friend_4.jpg" alt=""></div>
+                    <div class="grid__box"><img src="./img/friend_gallery/friend_5.jpg" alt=""></div>
+                    <div class="grid__box"><img src="./img/friend_gallery/friend_6.jpg" alt=""></div>
+                    <div class="grid__box"><img src="./img/friend_gallery/friend_7.jpg" alt=""></div>
+                    <div class="grid__box"><img src="./img/friend_gallery/friend_8.jpg" alt=""></div>
+                    <div class="grid__box"><img src="./img/friend_gallery/friend_9.jpg" alt=""></div>
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- Right Side -->
+        <div id="right" class="content__right content__container">
+
+            <!--Menu-->
+            <nav class="content__menu">
+                        
+                <ul>
+                    <li class="active">
+                        <i class="material-icons">schedule</i>
+                        <a id="timelineLnk" href="#" >Timeline</a>
+                    </li>
+                    <li>
+                        <i class="material-icons">contact_page</i>
+                        <a id="introLnk" href="#">About</a>
+                    </li>
+                    <li>
+                        <i class="material-icons">groups</i>
+                        <a id="friendsLnk" href="#">Friends</a>
+                    </li>
+                    <li>
+                        <i class="material-icons">photo_camera</i>
+                        <a id="photosLnk" href="#">Photos</a>
+                    </li>
+                    <li>
+                        <i class="material-icons more_vert">more_vert</i>
+                    </li>
+                </ul>
+
+            </nav>
+
+            <!-- Timeline - Right Side Top Container -->
+            <div class="content__post">
+
+                <div class="content__post__share">
+                    
+                    <div class="post__user__image">
+                        <img src="./img/profile-img.jpg">
+                    </div>
+                    
+                    <div class="post__user__info">
+
+                        <span>
+                            <a href="">Jasmine Mone Carson</a> shared a <a href="">link</a>.
+                        </span>
+
+                        <span>Feb 19 at 10:35 AM via Instagram</span>
+                        
+                    </div>
+                    
+                    <i class="material-icons">expand_more</i>
+
+                </div>
+
+                <div class="content__post__img">
+
+                    <img src="./img/post-img.jpg" alt="">
+
+                </div>
+
+                <div class="content__post__icons">
+                    <div>
+                        <i class="material-icons">thumb_up</i>
+                        <i class="material-icons">reply</i>
+                    </div>
+                    <div>
+                        <i class="material-icons">chat_bubble</i>
+                        <span>1</span>
+                    </div>
+                </div>
+
+                <div class="content__post__comment">
+                    <img src="./img/friend_gallery/friend_6.jpg">
+
+                    <div>
+                        <p><a href="#">Lilliana Bastarche</a></p>
+                        <span>11:09 AM</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quo rem enim eius, obcaecati pariatur, cum nisi provident voluptatem consectetur illum aut corrupti esse cumque ullam necessitatibus commodi odio nulla.</p>
+                        
+                    </div>
+
+                </div>
+
+                <div class="content__post__write">
+
+                    <img src="./img/profile-img.jpg">
+                    
+                    <input type="text" placeholder="Write a comment..">
+                    <div class="post__write__icons">
+                        <i class="material-icons">photo_camera</i>
+                        <i class="material-icons">insert_emoticon</i> 
+                    </div>
+                    
+                </div>
+
+            </div>
+            
+            <!-- Right Side Bottom Container -->
+            <div class="bottom__container">
+                
+                <div class="logo__container">
+                    <img class="bottom__logo" src="./img/fake-logo.png">
+                </div>
+                
+                <div class="bottom__post">
+                    
+                    <h3>Enjoy the Day</h3>
+                    <p>Morning comes whether you set the alarm or not.</p>
+
+                    <div class="post-time">
+                        <span>08:00 AM</span>
+                        <i class="material-icons">thumb_up</i>
+                    </div>
+
+                </div>
+
+                <div class="bottom__post--2">
+
+                    <p>Yesterday Morning</p>
+                    <i class="material-icons">expand_more</i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        
+
+    </section>
+    <script src="js/main3.js"></script>
+
+</body>
+</html>
