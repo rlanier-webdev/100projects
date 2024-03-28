@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #051821;
+    color: #1A4645;
+    font-size: 16px;
+}
+h1 {
+    margin-top: 10px;
+}
+section {
+    text-align: center;
+    background-color: white;
+    height: 400px;
+    width: 325px;
+    margin: 100px auto;
+    padding: 25px;
+    border-radius: 2%;
+    -webkit-border-radius: 2%;
+    -moz-border-radius: 2%;
+    -ms-border-radius: 2%;
+    -o-border-radius: 2%;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.converter__container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    padding: 0 25px;
+}
+input, button {
+    height: 50px;
+    padding: 5px 15px;
+    margin-bottom: 10px;
+    border: none;
+
+}
+input {
+    font-size: 25px;
+    color: #777771;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+input:focus {
+    border: none;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+button {
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: #F58800;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    outline:none; 
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+button:hover {
+    background-color: #e0881c;
+}
+#message {
+    text-align: center;
+    padding: 25px 0;
+    font-size: 25px;
+
+}

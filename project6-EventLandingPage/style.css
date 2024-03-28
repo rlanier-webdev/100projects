@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #111;
+    width: auto;
+}
+button{
+    text-transform: uppercase;
+}
+/* Main Container */
+
+.main__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    border-bottom: 1px solid #dddcdc;
+    padding: 25px 0;
+    width: 1000px;
+}
+#logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#logo i {
+    color: #ff5153;
+    padding: 5px;
+}
+#logo p {
+    font-weight: 700;
+    padding-left: 5px;
+}
+#logo span {
+    margin-top: -2px;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #b3b3b3;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+nav ul li a{
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: #333;
+    padding: 10px 18px;
+}
+nav ul li a.active {
+    text-align: left;
+    border-bottom: 2px solid #ff5153;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 18px;
+}
+
+nav ul li a:hover{
+    color: #ff5153;
+}
+.button {
+    background-color: #ff5153;
+    color: #fff;
+    padding: 9px 12px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.07);
+    cursor: pointer;
+}
+.button:hover {
+    color: #fff;
+    background-color: #ff4346c2;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+#content__container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    padding-bottom: 50px;
+    margin-top: -10px;
+}
+.left, .right {
+    width: 500px;
+}
+.left {
+    margin-top: 100px;
+    width: 400px;
+}
+.left hr {
+    width: 8%;
+    border: none;
+    height: 1px;
+    color: #ff5153;
+    background-color: #ff5153;
+    margin-bottom: 20px;
+}
+.date {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #ff5153;
+    margin-bottom: 15px;
+}
+h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+}
+.location {
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4px;
+    padding-bottom: 40px;
+    color: #818181;
+}
+span.bullet {
+    content: "\2022";
+    color: #ff5153;
+    padding: 0 15px;
+    font-size: 1.5rem;
+}
+button {
+    border: none;
+    padding: 9px 20px !important;
+}
+.right {
+    margin-left: 75px;
+}
+.countdown {
+    padding: 20px 25px;
+    background-color: #ff5153;
+    background-image: linear-gradient(56deg, #ff5153 53%, #f58b8d 100%);
+    border-radius: 10px 0 40px 10px;
+    -webkit-border-radius: 10px 0 40px 10px;
+    -moz-border-radius: 10px 0 40px 10px;
+    -ms-border-radius: 10px 0 40px 10px;
+    -o-border-radius: 10px 0 40px 10px;
+    position: relative;
+    left: -90px;
+    top: 60px;
+    z-index: 1;
+    box-shadow: 0 1px 1px rgba(99, 99, 99, 0.12), 
+        0 2px 2px rgba(0,0,0,0.12), 
+        0 4px 4px rgba(0,0,0,0.12), 
+        0 8px 8px rgba(0,0,0,0.12),
+        0 16px 16px rgba(0,0,0,0.12);
+}
+.countdown ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+.countdown ul li {
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+    padding: 0 30px;
+}
+/* Thank you!! 
+    - https://stackoverflow.com/a/19147455/13571886
+    - https://stackoverflow.com/a/2573566
+*/
+.countdown ul li:not(:last-child) {
+    border-right: .8px solid rgba(255, 255, 255, 0.582);
+    transform: skew(-15deg) rotate(2deg);
+    -webkit-transform: skew(-15deg) rotate(2deg);
+    -moz-transform: skew(-15deg) rotate(2deg);
+    -ms-transform: skew(-15deg) rotate(2deg);
+    -o-transform: skew(-15deg) rotate(2deg);
+}
+.countdown ul li:not(:last-child) p {
+    transform: skew(15deg) rotate(-2deg);
+    -webkit-transform: skew(15deg) rotate(-2deg);
+    -moz-transform: skew(15deg) rotate(-2deg);
+    -ms-transform: skew(15deg) rotate(-2deg);
+    -o-transform: skew(15deg) rotate(-2deg);
+    padding: 3% 2%;
+}
+.countdown ul li p {
+    line-height: 0.7em;
+}
+.countdown ul li p:nth-child(1) {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.countdown ul li span {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 100;
+}
+.right img {
+    width: 100%;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+        0 2px 4px rgba(0,0,0,0.07), 
+        0 4px 8px rgba(0,0,0,0.07), 
+        0 8px 16px rgba(0,0,0,0.07),
+        0 16px 32px rgba(0,0,0,0.07), 
+        0 32px 64px rgba(0,0,0,0.07);
+}
