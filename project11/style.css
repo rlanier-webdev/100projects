@@ -1,0 +1,108 @@
+@import url("https://use.typekit.net/mwl4krd.css");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+body {
+    font-family: brandon-grotesque, sans-serif; 
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.main__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    margin: 75px;
+    padding: 30px;
+
+} 
+
+.title h1 {
+    font-size: 8rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+}
+.converter__container {
+    margin-left: 100px;
+    width: 200px;
+    background-color: black;
+    padding: 25px;
+}
+.converter__container > div {
+    flex-direction: row;
+}   
+#output__area {
+    text-align: center;
+    font-size: 2.3rem;
+}
+label {
+    font-size: 1.4rem;
+    margin: 10px 0;
+
+}
+input {
+    padding: 5px;
+    font-size: 1.1rem;
+    border: none;
+    color: #000000;
+    width: 100%;
+}
+input:invalid {
+    border: 2px solid red;
+}
+input:focus {
+    outline: none;
+}
+button {
+    color: #FFF;
+    border: 2px solid rgb(255, 255, 255);
+    margin-top: 25px;
+    padding: 10px 20px;
+    background-color: transparent;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #dadada;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+    font-family: brandon-grotesque, sans-serif; 
+    font-size: 1.125rem;
+    line-height: 22px;
+    letter-spacing: -0.022rem;
+    font-weight: 300;
+}
+button:hover {
+    box-shadow: inset 400px 0 0 0 #ffffff;
+    color: #000000;
+  }
+
+@media only screen and (max-width: 768px) {
+    .main__container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title h1 {
+        font-size: 5rem;
+        text-align: center;
+        
+    }
+    .converter__container {
+        margin: 0;
+    }
+
+}

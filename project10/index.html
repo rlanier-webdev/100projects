@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <title>Project 10 - Tip Calculator</title>
+</head>
+<body>
+    <div class="main__container">
+
+        <div class="title">
+            <h1>Tip Calculator</h1>
+        </div>
+
+        <div class="form__container">
+            <form class="tipCalc">
+                <div>
+                    <label for="billAmt">Bill Amount</label>
+                    <i class="fas fa-dollar-sign"></i>
+                    <input type="number" name="billAmt" id="billAmt" min="0" value="0" step=".01" onfocus="this.value=''"required>
+                </div>
+                
+                <div>
+                    <label for="tipPercentage">Tip % </label> 
+                    <select name="tipPercentage" id="tipPercentage">
+                        <option value=".05">5%</option>
+                        <option value=".10">10%</option>
+                        <option selected value=".15">15%</option>
+                        <option value=".20">20%</option>
+                        <option value=".25">25%</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="tipAmt">Tip Amount</label> 
+                    <i class="fas fa-dollar-sign"></i>
+                    <input type="text" name="tipAmt" id="tipAmt" value="" placeholder="0.00" readonly>
+                </div>
+
+                <div>
+                    <label for="total">Total</label> 
+                    <i class="fas fa-dollar-sign"></i>
+                    <input type="text" name="total" id="total" value="" placeholder="0.00" readonly>
+                </div>
+            </form>
+        </div>
+        
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
