@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Contact Landing Page</title>
+</head>
+<body>
+    <div class="main__container">
+        <header>
+            <nav>
+                <div class="logo">
+                    <i class="fas fa-laptop-code fa-3x"></i>
+                    <div class="logo__text">
+                        <p>R.Lanier</p>
+                        <span>Web Dev & Support</span>
+                    </div>
+                    
+                </div>
+
+                <div class="hamburger__menu">
+                    <input class="menu__btn" type="checkbox" id="menu__btn" />
+                    <label class="menu__icon" for="menu__btn"><span class="navicon"></span></label>
+                
+                    <ul class="menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a class="active" href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+            </nav>
+
+            <div class="title__area">
+                <h1>Contact Us</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sullae consulatum? Zenonis est, inquam, hoc Stoici.</p>
+            </div>
+            
+
+            <div class="social__links">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </header>
+        
+        <section class="content__container">
+
+
+            <form id="contact__form">
+                <h1>Send us a Message</h1>
+                
+                <input type="text" name="fName" id="fName" placeholder="First Name" required>
+                <input type="text" name="lName" id="lName" placeholder="Last Name" required>
+                <input type="email" name="email" id="email" placeholder="Your Email Address" required>
+                <input type="url" name="website" id="website" placeholder="Your Website">
+                <textarea  id="message" placeholder="How can we help?" minlength="50" required></textarea>
+
+                <button class="button">Send Now <i class="fas  fa-paper-plane"></i></button>
+            </form>
+        </section>
+        
+        <!--http://127.0.0.1:5500/index.html?fName=Ray&lName=Williams&email=rlanierwilliams13%40gmail.com&website=http%3A%2F%2Fwww.rashundawilliams.com-->
+    </div>
+    <script type="text/javascript" src="js/airtable.browser.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
