@@ -54,7 +54,7 @@ func main() {
 	lastQuoteID = 0
 
 	// Existing quotes
-	text := []string{"Ray", "Joy"}
+	text := []string{"Joe", "Jane"}
 	authors := []string{"This is a test.", "This is another test."}
 
 	// Populate quotes from existing text and authors
