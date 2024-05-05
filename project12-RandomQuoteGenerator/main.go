@@ -4,7 +4,9 @@ import (
 	"bufio"
 	"errors"
 	"fmt"
+	"log"
 	"math/rand"
+	"net/http"
 	"os"
 	"strings"
 )
@@ -30,10 +32,10 @@ func PopulateQuotes(text, authors, movies []string) ([]Quote, error) {
 	}
 
 	// Iterate over the text and authors arrays to create Quote structs
-	for i := 0; i < len(text); i++ {
+	for i, t := range text {
 		quote := Quote{
 			ID:     lastQuoteID + 1,
-			Text:   text[i],
+			Text:   t,
 			Author: authors[i],
 			Movie:  movies[i],
 		}
@@ -54,7 +56,7 @@ func getRandomQuoteIndex(numQuotes int) (int, error) {
 	return randomIndex, nil
 }
 
-func getData() ([]string, []string, []string, error) {
+func getDataFromFile() ([]string, []string, []string, error) {
 	var textData, authorsData, moviesData []string
 
 	file, err := os.Open("quotes.txt")
@@ -81,7 +83,10 @@ func getData() ([]string, []string, []string, error) {
 	}
 
 	return textData, authorsData, moviesData, nil
+}
 
+func pageHandler(w http.ResponseWriter, _ *http.Request, quote Quote) {
+	fmt.Fprintf(w, "%s -%s, %s", quote.Text, quote.Author, quote.Movie)
 }
 
 func main() {
@@ -89,7 +94,7 @@ func main() {
 	lastQuoteID = 0
 
 	// Get data from the file
-	text, authors, movies, err := getData()
+	text, authors, movies, err := getDataFromFile()
 	if err != nil {
 		fmt.Println("Error:", err)
 		return
@@ -112,9 +117,12 @@ func main() {
 		return
 	}
 
-	// Access the random quote using the index
-	randomQuote := quotes[randomIndex]
+	fmt.Println("Server is running on port 8000")
+	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+		randomQuote := quotes[randomIndex]
+		pageHandler(w, r, randomQuote)
+	})
 
-	fmt.Println("\nRandom Quote:")
-	fmt.Printf("%s -%s, %s\n", randomQuote.Text, randomQuote.Author, randomQuote.Movie)
+	log.Fatal(http.ListenAndServe(":8000", nil))
+
 }
