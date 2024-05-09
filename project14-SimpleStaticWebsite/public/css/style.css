@@ -1,0 +1,150 @@
+body {
+     font-family: 'Poppins', sans-serif;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     background-color: #FAE3E3;
+}
+h1 {
+     font-size: 3.5rem;
+     font-weight: 700;
+     margin-bottom: 1rem;
+}
+h2 {
+     font-size: 2.5rem;
+     font-weight: 600;
+     margin-bottom: 1rem;
+}
+h3 {
+     font-size: 2rem;
+     font-weight: 500;
+     margin-bottom: 1rem;
+}
+p {
+     font-size: 1rem;
+     font-weight: 400;
+     margin-bottom: 1rem;
+     line-height: 1.75;
+}
+header {
+     width: 100%;
+     display: flex;
+     gap: 16px; 
+     align-items: center;
+}
+header .logo {
+     font-size: 1.2rem;
+     font-weight: 700;
+}
+header nav {
+     margin-left: auto;
+}
+nav ul {
+     display: flex;
+     flex-direction: row;
+     gap: 16px;
+}
+nav ul li {
+     list-style: none;
+}
+a {
+     text-decoration: none;
+     color: #0e0d0d;
+}
+a:hover {
+     color: #1a1a1a;
+}
+.container {
+     display: flex;
+     flex-direction: column;
+     gap: 42px;
+     margin:25px 100px 50px;
+}
+.card-container, .hero, .cta, .about {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     padding: 8rem;
+}
+.hero {
+     padding: 0;
+     margin-top: -16px;
+     height: 85vh;
+     flex-direction: column;
+     background-color: #2660A4;
+}
+.hero p {
+     font-size: 1.5rem;
+     margin-top: 1rem;
+}
+.about {
+     flex-direction: row !important;
+     gap: 3rem;
+     background-color: #FBAF00;
+}
+.about-text {
+     display: flex;
+     gap: 0.3rem;
+     flex-direction: column;
+     width: 50%;
+}
+.about-img{
+     width: 50%;
+}
+.about-img img, .card img{
+     width: 95%;
+     border-radius: 8px;
+}
+.card-container {
+     flex-direction: row;
+     gap: 3rem;
+     background-color: #EA4860;
+}
+.content {
+     border-radius: 8px;
+}
+.cta {
+     text-align: center;
+     background-color: #49BDAE;
+}
+button {
+     padding: 0.5rem 1rem;
+     border: none;
+     border-radius: 8px;
+     background-color: #0e0d0d;
+     color: white;
+     font-size: 1rem;
+     cursor: pointer;
+}
+button:hover {
+     background-color: #1a1a1a;
+}
+footer {
+     text-align: center;
+     margin-bottom: -30px;
+}
+
+@media screen and (max-width: 768px) {
+     .container {
+          margin: 25px 20px 50px;
+     }
+     .card-container, .hero, .cta, .about {
+          padding: 2rem;
+     }
+     .hero {
+          height: 100vh;
+     }
+     .about {
+          flex-direction: column;
+     }
+     .about-text {
+          width: 100%;
+     }
+     .about-img {
+          width: 100%;
+     }
+     .card-container {
+          flex-direction: column;
+     }
+}
