@@ -23,7 +23,7 @@ jobs:
     - name: Install dependencies
       run: |
         go version
-        go get -v -t -d ./.../project14-SimpleStaticWebsite
+        go get -v -t -d ./project14-SimpleStaticWebsite
 
     - name: Run Site
       run: |
