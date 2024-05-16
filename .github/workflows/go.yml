@@ -24,7 +24,7 @@ jobs:
     - name: Install dependencies
       run: |
         go version
-        go install https://github.com/rlanier-webdev/100-projects/project14-SimpleStaticWebsite@latest
+        go install https://github.com/rlanier-webdev/100-projects/project14-SimpleStaticWebsite
 
     - name: Build Site
       run: |
