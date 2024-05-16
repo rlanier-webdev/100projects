@@ -26,6 +26,10 @@ jobs:
         go version
         go get -v -d ./project14-SimpleStaticWebsite
 
+    - name: Build Site
+      run: |
+          go build main.go
+          
     - name: Run Site
       run: |
-        go main .
+        go run .
